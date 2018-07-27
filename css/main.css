@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/*black: '#000000',
+red: '#ff0000',
+green: '#33ff00',
+yellow: '#ffff00',
+blue: '#0066ff',
+magenta: '#cc00ff',
+cyan: '#00ffff',
+white: '#d0d0d0’,*/
+.bg-dark {
+  background: black !important;
+}
+
+body {
+  background: #333;
+  background-image: url("../img/bg-pattern.png");
+}
+
+.container {
+  background: white;
+}
+
+.navbar .navbar-brand {
+  width: 100px;
+}
+.navbar .navbar-brand img {
+  width: 100%;
+}
+
+.main-wrapper * {
+  -webkit-transition: all 1s;
+  /* Safari */
+  transition: all 1s;
+}
+.main-wrapper .container {
+  padding: 20px;
+}
+.main-wrapper .container .filter-control-wrapper .btn-primary {
+  background: none;
+  background: black;
+  color: #33ff00;
+  border: none;
+}
+.main-wrapper .container .filter-control-wrapper .btn-primary:last-of-type {
+  margin-right: 20px;
+}
+
+.contact-wrapper .card {
+  background: #111;
+}
+.contact-wrapper .card .card-body .card-title {
+  color: white;
+  border-bottom: 1px solid #33ff00;
+  padding-bottom: 20px;
+}
+.contact-wrapper .card .card-body .edit-btn {
+  right: 0px;
+  cursor: pointer;
+}
+.contact-wrapper .card .list-group {
+  background: #111;
+  color: white;
+}
+.contact-wrapper .card .list-group .list-group-item {
+  padding-left: 0px;
+  padding-right: 0px;
+  background: none;
+  border-bottom: 1px solid #33ff00;
+}
+.contact-wrapper .card .form-control {
+  background: none;
+  border: 0px;
+}
+.contact-wrapper .card .form-control:focus {
+  box-shadow: none !important;
+}
+.contact-wrapper .btn-delete {
+  margin-top: 20px;
+  float: right;
+  background: #33ff00;
+  border: 1px solid #33ff00;
+}
+
+/*# sourceMappingURL=main.css.map */

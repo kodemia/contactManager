@@ -1,0 +1,101 @@
+$kodeRed:rgb(255,0,0);
+$kodeGreen:rgb(51,255,0);
+$kodeBlue:rgb(0,102,255);
+$kodeMagenta:rgb(204,0,255);
+$kodeCyan:rgb(0,255,255);
+$kodeWhite:rgb(208,208,208);
+$kodeYellow:rgb(255,255,0);
+$kodeAlpha:.3;
+
+/*black: '#000000',
+red: '#ff0000',
+green: '#33ff00',
+yellow: '#ffff00',
+blue: '#0066ff',
+magenta: '#cc00ff',
+cyan: '#00ffff',
+white: '#d0d0d0’,*/
+
+.bg-dark{
+	background:black !important;
+}
+
+body{
+	background:#333;
+	background-image:url("../img/bg-pattern.png")
+}
+
+.container{
+	background:white;
+}
+
+.navbar{
+	.navbar-brand{
+		width:100px;
+		img{
+			width:100%;
+		}
+	}
+}
+
+.main-wrapper{
+	*{
+		-webkit-transition: all 1s; /* Safari */
+    	transition: all 1s;
+	}
+	.container{
+		padding:20px;
+		.filter-control-wrapper{
+			.btn-primary{
+				background:none;
+				background:black;
+				color:$kodeGreen;
+				border:none;
+				&:last-of-type{
+					margin-right:20px;
+				}
+			}
+		}
+	}
+}
+
+.contact-wrapper{
+	.card{
+		background:#111;
+		.card-body{
+			.card-title{
+				color:white;
+				border-bottom:1px solid $kodeGreen;
+				padding-bottom:20px;
+			}
+			.edit-btn{
+				right:0px;
+				cursor:pointer;
+			}
+		}
+		.list-group{
+			background:#111;
+			color:white;
+			.list-group-item{
+				padding-left:0px;
+				padding-right:0px;
+				background:none;
+				border-bottom:1px solid $kodeGreen;
+			}
+		}
+		.form-control{
+			background: none;
+		    border: 0px;
+		    &:focus{
+		    	box-shadow: none !important;
+		    }
+		}
+	}
+	.btn-delete{
+		margin-top:20px;
+		float:right;
+		background:$kodeGreen;
+		border:1px solid $kodeGreen;
+	}
+}
+
