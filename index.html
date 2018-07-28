@@ -50,6 +50,8 @@
 			<div class="collapse navbar-collapse navbar-right" id="navbarSupportedContent">
 				<p></p>
 			</div>
+			<div class="btn btn-outline-secondary">Login con Facebook</div>
+			<div class="btn btn-outline-primary" onclick="showModal('#add-contact-modal')">Agregar Contacto</div>
 		</nav>
 		<div class="section main-wrapper">
 			<div class="container">
@@ -94,56 +96,26 @@
 					</div>
 					<div class="col-sm-3">
 						<div class="card">
-							<img class="card-img-top" src="img/user-pics/user-4.jpg" alt="Card image cap">
-							<div class="card-body contact-data">
-								<h5 class="card-title contact-name position-relative">Sharon Den Adele <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-									<div class="form-group">
-										<input type="text" class="form-control" placeholder="Nombre">
-									</div>
-								</h5>
-								<ul class="list-group list-group-flush">
-									<li class="list-group-item phone">5545485363 <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Teléfono">
-										</div>
-									</li>
-									<li class="list-group-item email">sharonadele@gmail.com <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Email">
-										</div>
-									</li>
-									<li class="list-group-item facebook">beautywithin <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Facebook">
-										</div>
-									</li>
-								</ul>
-								<div class="btn btn-primary btn-delete"><img src="img/svg/trashcan.svg" alt=""></div>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-3">
-						<div class="card">
 							<img class="card-img-top" src="img/user-pics/user-2.jpg" alt="Card image cap">
 							<div class="card-body contact-data">
-								<h5 class="card-title contact-name position-relative">Cristina Scabbia <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-									<div class="form-group">
+								<h5 class="card-title position-relative"><span class="data-label name">Johnny Depp</span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+									<div class="form-group d-none">
 										<input type="text" class="form-control" placeholder="Nombre">
 									</div>
 								</h5>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item phone">5548484526 <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
+									<li class="list-group-item phone"><span class="data-label phone">5578961578 </span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
 											<input type="text" class="form-control" placeholder="Teléfono">
 										</div>
 									</li>
-									<li class="list-group-item email">lacunacoil@gmail.com <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
+									<li class="list-group-item email"><span class="data-label email">blackpearl@gmail.com </span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
 											<input type="text" class="form-control" placeholder="Email">
 										</div>
 									</li>
-									<li class="list-group-item facebook">crisscabbia <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
+									<li class="list-group-item facebook"><span class="data-label facebook">johnnyrules</span> <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
 											<input type="text" class="form-control" placeholder="Facebook">
 										</div>
 									</li>
@@ -156,24 +128,54 @@
 						<div class="card">
 							<img class="card-img-top" src="img/user-pics/user-3.jpg" alt="Card image cap">
 							<div class="card-body contact-data">
-								<h5 class="card-title contact-name position-relative">Tommy Karevic<span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-									<div class="form-group">
+								<h5 class="card-title position-relative"><span class="data-label name">Johnny Depp</span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+									<div class="form-group d-none">
 										<input type="text" class="form-control" placeholder="Nombre">
 									</div>
 								</h5>
 								<ul class="list-group list-group-flush">
-									<li class="list-group-item phone">5578889634 <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
+									<li class="list-group-item phone"><span class="data-label phone">5578961578 </span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
 											<input type="text" class="form-control" placeholder="Teléfono">
 										</div>
 									</li>
-									<li class="list-group-item email">tommykamelot@gmail.com <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
+									<li class="list-group-item email"><span class="data-label email">blackpearl@gmail.com </span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
 											<input type="text" class="form-control" placeholder="Email">
 										</div>
 									</li>
-									<li class="list-group-item facebook">tommykamelot <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
-										<div class="form-group">
+									<li class="list-group-item facebook"><span class="data-label facebook">johnnyrules</span> <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
+											<input type="text" class="form-control" placeholder="Facebook">
+										</div>
+									</li>
+								</ul>
+								<div class="btn btn-primary btn-delete"><img src="img/svg/trashcan.svg" alt=""></div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-3">
+						<div class="card">
+							<img class="card-img-top" src="img/user-pics/user-4.jpg" alt="Card image cap">
+							<div class="card-body contact-data">
+								<h5 class="card-title position-relative"><span class="data-label name">Johnny Depp</span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+									<div class="form-group d-none">
+										<input type="text" class="form-control" placeholder="Nombre">
+									</div>
+								</h5>
+								<ul class="list-group list-group-flush">
+									<li class="list-group-item phone"><span class="data-label phone">5578961578 </span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
+											<input type="text" class="form-control" placeholder="Teléfono">
+										</div>
+									</li>
+									<li class="list-group-item email"><span class="data-label email">blackpearl@gmail.com </span><span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
+											<input type="text" class="form-control" placeholder="Email">
+										</div>
+									</li>
+									<li class="list-group-item facebook"><span class="data-label facebook">johnnyrules</span> <span class="edit-btn position-absolute"><img src="img/svg/pencil.svg" onclick="editField(this)" alt=""></span>
+										<div class="form-group d-none">
 											<input type="text" class="form-control" placeholder="Facebook">
 										</div>
 									</li>
